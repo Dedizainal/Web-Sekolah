@@ -1,0 +1,380 @@
+:root{
+	--primary: #68E531;
+	--secondary: #82c59e;
+}
+
+
+/* Navbar */
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Fredoka One', cursive;
+    font-size: 32px;
+}
+
+.navbar-toggler-icon {
+  color: #fff !important;
+  font-size: 20px !important;
+
+}
+
+.navbar-toggler {
+  border: 0;
+  outline: none !important;
+  padding: inherit;
+  
+}
+
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/jumbotron-bg.jpg); 
+  background-size: cover;
+  height: 540px;
+  margin-top: -75px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgb(15, 3, 14), rgba(1, 8, 8, 0));
+  position: absolute;
+  bottom: 0;
+
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(0,0,0,7);
+  font-size: 40px !important;
+  animation: efek 1.5s linear;}
+
+
+.jumbotron, .display-4 span {
+  font-weight: 500;
+  margin-bottom: 40px; }
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	line-height: 1.5;
+	border: 1px solid transparent;
+	font-weight: 400;
+	padding: 12px 17px;
+	letter-spacing: 3;
+  border-radius: 20px; }
+
+.btn-primary{
+	color:#fff;
+	background-color: var(--primary);
+	transition: all 0.3s ease-in;
+  box-shadow: 0 5px 50px rgba(0,0,0, 0.1); 
+  
+}
+
+.btn-primary:hover{
+	color:var(--primary);
+	background-color: transparent;
+	border:1px solid var(--primary) }
+
+.btn-change{
+	border: 1px solid var(--primary);
+	padding: 6px 20px;
+	background: transparent;
+  color: var(--primary);
+  color: black !important;
+  font-weight: 450;
+ }
+
+.btn-change:hover{
+	background-color: var(--primary);
+	color: #fff !important; }
+
+
+.info-text {
+  float: left;
+}
+/* Akhir Jumbotron */
+
+
+
+
+/* Infro Panel */
+
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: white;
+  padding: 30px;
+  
+  
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right:20px;
+  margin-bottom: 20px;  }
+
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px; }
+
+.info-panel p {
+  font-size: 14px;
+  color: #ACACAC;
+  margin-top: -5px;
+
+}
+
+.tombol-learn {
+  font-size: 13px;
+  margin-right: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  border: 1px solid green;
+  text-decoration: none !important;
+  border-radius: 15px;
+  padding: 5px 20px; }
+
+/* Workspace */
+
+.workspace {
+  margin-top: 120px; 
+  text-align: center;
+}
+
+.workspace h3 {
+  font-size: 53px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+  animation: efek 1.5s linear;
+  }
+
+  .img-fluid {
+    width:390px;
+  }
+
+  
+@keyframes efek{
+	0%{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	50%{
+		opacity: 0.5;
+		transform: translateY(40px);
+	}
+	70%{
+		opacity: 0.7;
+		transform: translateY(20px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.workspace h3 span {
+  font-weight: 500;
+}
+
+
+.workspace p {
+  font-size: 18px;
+  color: #ACACAC;
+  font-weight: 200;
+  margin: 30px 0;
+}
+
+
+/* Testimonial */
+.testimonial {
+  margin-top: 100px; 
+
+}
+
+.testimonial h5 {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+
+.testimonial figure img{
+  width: 60px;
+  margin: 20px 10px 10px;
+  
+}
+
+.testimonial figure img.utama {
+  width: 90px;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+
+.testimonial figure h5 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1C2C55;
+  
+}
+
+.testimonial figure p {
+  font-size: 12px;
+  color:#ACACAC;
+  margin-top: -5px !important;
+}
+
+
+.testimonial figcaption {
+  text-align: center;
+}
+
+
+/* Footer */
+
+.footer {
+  margin-top: 100px;
+
+}
+
+.footer p {
+  color:#ACACAC;
+  font-size: 18px;
+  
+
+}
+
+
+/* utinity */
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    
+    
+}
+/* Akhir utinity */
+
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+
+.navbar-brand, .nav-link {
+  color:white !important;
+  text-shadow: 1px 1px 1px rgb(0,0,0,7)
+    
+  }
+
+.nav-link {
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+}
+
+.nav-link:hover::after {
+  content:'';
+  display: block;
+  border-bottom: 3px solid var(--primary);
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+
+    }
+
+.jumbotron {
+  margin-top: -75px;
+  height: 540px;
+}
+
+.jumbotron .display-4 {
+  font-size: 55px !important;
+}
+
+.workspace {
+  text-align: left;
+}
+
+
+.testimonial h5  {
+  font-size: 32px;
+}
+
+
+.btn{
+	display: inline-block;
+	text-align: center;
+	border: 2px solid transparent;
+	font-weight: 400;
+	padding: 12px 17px;
+	border-radius: 30px;
+	
+}
+
+/* Buton jumbotron */
+.btn-primary{
+	color:#fff;
+	background-color: var(--primary);
+	transition: all 0.3s ease-in;
+	
+}
+
+.btn-primary:hover{
+	color:var(--primary);
+	background-color: transparent;
+	border:3px solid var(--primary);
+  
+}
+
+
+/* Hover Panel */
+.btn-change{
+	border: 1px solid var(--primary);
+	padding: 6px 17px;
+	background: transparent;
+  color: var(--primary);
+  color: black !important;
+  font-weight: 450;
+}
+
+.btn-change:hover{
+	background-color: var(--primary);
+	color: #fff !important;
+}
+
+/* Akhir hover panel */
+
+.img-fluid {
+    width:100%;
+  }
+
+}
